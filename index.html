@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gifler@1.0.7/dist/gifler.min.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="login-section">
+            <div class="form-login">
+                <!-- Substituir o img por um canvas -->
+                <img src="./images/static-monkey.png" alt="Macaco tapando os olhos" class="monkey-static" id="static-monkey-closed-eyes">
+                <img src="./images/static-monkey-open-eyes.png" alt="Macaco abrindo os olhos" class="monkey-static" id="static-monkey-open-eyes">
+                <img src="./images/monkey.gif" alt="Macaco tapando os olhos" class="monkey-gif" id="gif-monkey">
+              
+                <input type="text" id="name" name="name" class="input-form" placeholder="Login">
+                <input type="password" id="password" name="password" class="input-form" placeholder="Password">
+                <label for="show-password">
+                    <input type="checkbox" id="show-password"> Visualizar senha
+                </label>
+                <button type="submit" class="btn">Entrar</button>
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>
