@@ -5,6 +5,7 @@
     padding: 0;
 }
 
+
 :root {
     --white: #fff;
     --dark1: #34344e;
@@ -40,7 +41,7 @@ body {
 
 
 
-section div {
+.form-login {
     display: flex;
     flex-direction: column;
     background-color: var(--dark6);
@@ -55,7 +56,10 @@ section div {
     color: var(--white);
 }
 
-
+.div-input {
+    display: flex;
+    flex-direction: column;
+}
 
 section div a {
     margin-top: 1rem;
@@ -65,31 +69,40 @@ section div a {
     font-size: .8rem;
 }
 
-.input-form,
-.btn {
-    color: gray;
+.input-form {
+
+    color: black;
     padding: .8rem;
     margin: .2rem;
     border-radius: 5px;
     border: solid 1px cyan;
+    padding-right: 45px;
 }
 
-.btn {
-    padding: .5;
-    color: black;
-    cursor: pointer;
-    border-top: 1rem;
+.btn-submit {
+    color: var(--white);
+    padding: .5rem;
+    margin: .2rem;
+    border-radius: 5px;
+    background-color: var(--dark2);
+    border: solid 1px cyan;
 }
 
-.btn:hover {
+
+.btn-submit:hover {
     padding: .5;
-    background-color: gray;
+    color: var(--dark4);
+    background-color: var(--dark6);
     cursor: pointer;
 }
 
 .monkey-gif,
 .monkey-static {
     width: 130px;
+    border: 1px solid var(--cyan1);
+    border-radius: 50%;
+    padding: 2px;
+    margin: 1rem;
 }
 
 
@@ -98,7 +111,17 @@ section div a {
     display: none;
 }
 
-.btn {
-    width: 100%;
-    font-family: 'Lato';
+
+
+.bi-eye,
+.bi-eye-slash {
+    position: relative;
+    top: -2rem;
+    left: 12.3rem;
+}
+
+.bi-eye:hover,
+.bi-eye-slash:hover {
+    fill: black;
+    cursor: pointer;
 }
